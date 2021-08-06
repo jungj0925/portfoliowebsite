@@ -6,6 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Montserrat", sans-serif;
+	min-width: 500px;
 }
 
 :root {
@@ -305,9 +306,12 @@ button:hover {
 }
 
 .projects {
-	display: grid;
+/*	display: grid;
 	grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .projects div {
@@ -590,9 +594,13 @@ button:hover {
 /*---------------------------AWARDS---------------------------*/
 
 .awards {
-	display: grid;
+/*	display: grid;
 	grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .awards div {
@@ -743,7 +751,7 @@ button:hover {
 	}
 }
 
-@media only screen and (max-width:  750px) {
+@media only screen and (max-width:  900px) {
 	body {
 		font-size: 1em;
 	}
@@ -779,6 +787,9 @@ button:hover {
 	}
 	.navbar-links li a:hover {
 		color: var(--black);
+	}
+	.projects {
+		flex-direction: column;
 	}
 	.skills-bar {
 		width: 450px;
