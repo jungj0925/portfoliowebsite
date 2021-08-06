@@ -379,7 +379,7 @@ button:hover {
 .skills-bar {
 	font-size: 1.2em;
 	width: 700px;
-	height: 425px;
+	height: 475px;
 	background-color: var(--blue);
 	border-radius: 10px;
 	padding: 25px 30px;
@@ -431,10 +431,16 @@ button:hover {
 	width: 55%;
 }
 .progress-line.python span {
-	width: 90%;
+	width: 80%;
 }
 .progress-line.c span {
 	width: 85%;
+}
+.progress-line.photoshop span {
+	width: 90%;
+}
+.progress-line.vid span {
+	width: 95%;
 }
 
 .bar .progress-line span::after {
@@ -461,10 +467,16 @@ button:hover {
 	content: "55%";
 }
 .progress-line.python span::after {
-	content: "90%";
+	content: "80%";
 }
 .progress-line.c span::after {
 	content: "85%";
+}
+.progress-line.photoshop span::after {
+	content: "90%";
+}
+.progress-line.vid span::after {
+	content: "95%";
 }
 
 .technical-container {
@@ -575,6 +587,33 @@ button:hover {
 .card .percent .number h2 span {
 	font-size: 24px;
 }
+/*---------------------------AWARDS---------------------------*/
+
+.awards {
+	display: grid;
+	grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.awards div {
+	align-items: center;
+	padding: 10px;
+	margin:  1em 1.5em;
+	background-color: var(--blue);
+	border-radius: 10px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.awards div img {
+	height: 175px;
+}
+
+.awards p {
+	margin-top: 0;
+}
+
 
 /*---------------------------CONTACT---------------------------*/
 #contact-container {
@@ -704,7 +743,7 @@ button:hover {
 	}
 }
 
-@media only screen and (max-width:  600px) {
+@media only screen and (max-width:  750px) {
 	body {
 		font-size: 1em;
 	}
