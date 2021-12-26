@@ -816,3 +816,36 @@ button:hover {
 		display: none;
 	}
 }
+
+
+footer {
+	height: 17.5em;
+	background-color: darkslategray;
+	display: grid;
+}
+
+footer ul li img {
+	width: 2em;
+	height: auto;
+	cursor: pointer;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	list-style: none;
+	justify-content: center;
+}
+
+footer ul li {
+	display:  inline-block;
+	padding: 2em;
+	padding-top: 3em;
+	filter: invert(100%);
+}
+
+footer .navbar-links {
+	padding-bottom: 3em;
+}
